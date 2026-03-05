@@ -133,29 +133,18 @@ p {
     display: none;
 }
 .burger-menu {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     width: 24px;
     height: 24px;
     margin: 16px 0;
-    padding: 0 4px;
+    
     background-color: transparent;
-
-    transition-property: background-color, opacity;
-    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-.burger-menu-line {
-    margin: 3px 0; /* відстань між рисками */
 }
-.burger-menu::after,
-.burger-menu::before,
-.burger-menu-line {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 2px;
-    border-radius: 1px;
-    background-color:  #2f2f37;
+.icon-burger-menu {
+    fill: #2f2f37;
 }
 .burger-menu:hover,
 .burger-menu:focus {
@@ -489,9 +478,9 @@ p {
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     fill: #F4F4FD;
 }
 .link-icon:hover,
