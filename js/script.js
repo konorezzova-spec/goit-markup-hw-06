@@ -1,5 +1,5 @@
 const burgerMenu = document.querySelector('.burger-menu');
-const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenu = document.querySelector('.mobile-menu-wrapper');
 const closeMobileMenuButton = document.getElementById('close-mobile-modal');
 
 

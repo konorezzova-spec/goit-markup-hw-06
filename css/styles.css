@@ -81,12 +81,12 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 767.98px) {
   .container {
     max-width: 768px;
   }
 }
-@media only screen and (min-width: 767.98px){
+@media only screen and (min-width: 1157.98px){
 .container {
     max-width: 1158px;
 }
@@ -258,12 +258,12 @@ p {
         url(../images/hero-header@2x.jpg);
   }
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 767.98px) {
   .hero-header {
     max-width: 768px;
   }
 }
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 1157.98px) {
   .hero-header {
     max-width: 1440px;
   }
@@ -274,13 +274,13 @@ p {
     padding-top: 72px;
     padding-bottom: 72px;
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 767.98px) {
     .hero-header-container {
         padding-top: 112px;
         padding-bottom: 112px;
     }
   }
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 1157.98px) {
     .hero-header-container {
         padding-top: 188px;
         padding-bottom: 188px;
@@ -740,7 +740,7 @@ p {
 
 /* #region mobyle menu */
 
-.mobile-menu {
+.mobile-menu-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -749,7 +749,9 @@ p {
     z-index: 999;
     display: flex;
     flex-direction: column;
-    background-color: #E5E5E5;
+    align-items: center;
+    
+    background-color: #fff;
     padding: 24px 24px 40px 16px;
 
     opacity: 0;
@@ -758,10 +760,21 @@ p {
     transition-property: opacity;
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-menu.is-open {
+.mobile-menu-wrapper.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+}
+@media only screen and (min-width: 767.98px) {
+  .mobile-menu-wrapper.is-open {
+    visibility: hidden;
+  }
+}
+.mobile-menu {
+    max-width: 320px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .nav-mobile {
     flex-grow: 1;
