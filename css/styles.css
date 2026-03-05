@@ -263,6 +263,12 @@ p {
     background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.7)), url(../images/hero-header.jpg);
 }
+@media only screen and (min-resolution: 192dpi) {
+  .hero-header {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.4), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-header@2x.jpg);
+  }
+}
 @media only screen and (min-width: 320px) {
   .hero-header {
     max-width: 768px;
