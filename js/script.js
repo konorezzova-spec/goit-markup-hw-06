@@ -1,18 +1,24 @@
-// const checkbox = document.querySelector('.custom-checkbox');
-// const checkboxIconBox = document.querySelector('.checkbox-icon-box');
+const burgerMenu = document.querySelector('.burger-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeMobileMenuButton = document.getElementById('close-mobile-modal');
 
-// checkboxIconBox.addEventListener('click', function () { 
 
-// });
+burgerMenu.addEventListener('click', function () {
+    mobileMenu.classList.add('is-open');
+})
+closeMobileMenuButton.addEventListener('click', function () {
+    mobileMenu.classList.remove('is-open');
+})
+
 
 const modalButton = document.querySelector('.hero-button');
 const modal = document.querySelector('.modal-overlay');
-const closeModalButton = document.querySelector('.close-modal');
+const closeModalButton = document.getElementById('close-modal-overlay');
+
 
 modalButton.addEventListener('click', function () {
     modal.classList.add('is-open');
 });
-
 closeModalButton.addEventListener('click', function () {
     modal.classList.remove('is-open');
 });
