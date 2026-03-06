@@ -74,7 +74,7 @@ p {
 .section {
     padding: 96px 0;
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157.98px) {
   .section {
     padding: 120px 0;
   }
@@ -153,34 +153,42 @@ p {
 .burger-menu:focus {
     background-color: transparent;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767.98px) {
     .burger-menu {
         display: none;
     }
+} 
+.header-address{
+    display: none;
+}
+@media only screen and (min-width: 767.98px) {
+  .header-address {
+    display: flex;
+  }
 }
 .nav-list,
 .contacts-list {
     display: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767.98px) {
     .nav {
         display: flex;
         align-items: center;
         gap: 120px;
     }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157.98px) {
     .nav {
         gap: 76px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767.98px) {
     .nav-list {
         display: flex;
         gap: 40px;
     }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767.98px) {
    .contacts-list {
         display: flex;
         flex-direction: column;
@@ -367,14 +375,14 @@ p {
     max-width: 288px;
     gap: 8px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767.98px) {
   .features-item{
     max-width: 356px;
     width: calc((100% - 24px) / 2);
     gap: 8px;
   }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157.98px) {
     .features-item {
         width: calc((100% - 72px) / 4);
     }
@@ -382,7 +390,7 @@ p {
 .feature-img {
     display: none;
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157.98px) {
   .feature-img {
         width: 100%;
         height: 112px;
@@ -408,7 +416,7 @@ p {
         text-align: left;
   }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157.98px) {
   .features-item h3 {
     font-weight: 500;
     font-size: 20px;
@@ -453,7 +461,7 @@ p {
     column-gap: 24px;
   }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157.98px) {
   .team-list {
     flex-wrap: nowrap;
     max-width: 100%;
@@ -599,7 +607,7 @@ p {
     padding-bottom: 96px;
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157.98px) {
   .footer-container {
     flex-direction: row;
     align-items: baseline;
@@ -779,7 +787,7 @@ p {
 
 /* #region mobyle menu */
 
-.mobile-menu-wrapper {
+.mobile-menu-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -799,13 +807,13 @@ p {
     transition-property: opacity;
     transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-menu-wrapper.is-open {
+.mobile-menu-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
 }
 @media only screen and (min-width: 767.98px) {
-  .mobile-menu-wrapper.is-open {
+  .mobile-menu-overlay.is-open {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
