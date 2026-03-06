@@ -305,7 +305,7 @@ p {
         margin-bottom: 36px;
     }
 }
-@media only screen and (min-width: 767.98px) {
+@media only screen and (min-width: 1157.98px) {
   .hero-title {
     margin-bottom: 48px;
   }
@@ -790,6 +790,8 @@ p {
 }
 @media only screen and (min-width: 767.98px) {
   .mobile-menu-wrapper.is-open {
+    opacity: 0;
+    pointer-events: none;
     visibility: hidden;
   }
 }
