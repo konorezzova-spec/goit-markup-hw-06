@@ -529,6 +529,11 @@ p {
     row-gap: 72px;
   }
 }
+@media only screen and (min-width: 1157.98px) {
+    .portfolio-list {
+        row-gap: 48px;
+    }
+}
 .portfolio-item {
     display: flex;
     flex-direction: column;
@@ -602,6 +607,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
     row-gap: 72px;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -611,7 +617,8 @@ p {
   .footer-container {
     flex-direction: row;
     align-items: baseline;
-    gap: 80px;
+    width: 100%;
+    justify-content: space-between;
     padding-top: 100px;
     padding-bottom: 100px;
   }
